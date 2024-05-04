@@ -1,0 +1,907 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-7="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:comment></rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_airline -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_airline">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Airline"/>
+        <rdfs:comment>It means that the object has an airline property.</rdfs:comment>
+        <rdfs:label>has_airline</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_destination -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_destination">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_flight_information"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Flight_Information"/>
+        <rdfs:comment>It means that the object has a destination property.</rdfs:comment>
+        <rdfs:label>has_destination</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_flight_information -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_flight_information">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review_Info"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Flight_Information"/>
+        <rdfs:comment>It means that the object has a flight information property.</rdfs:comment>
+        <rdfs:label>has_flight_information</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_origin -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_origin">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_flight_information"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Flight_Information"/>
+        <rdfs:comment>It means that the object has an origin property.</rdfs:comment>
+        <rdfs:label>has_origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_passenger -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_passenger">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review_Info"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger"/>
+        <rdfs:comment>It means that the object has a passenger property.</rdfs:comment>
+        <rdfs:label>has_passenger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_rating -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_rating">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Rating"/>
+        <rdfs:comment>It means that the object has a rating property.</rdfs:comment>
+        <rdfs:label>has_rating</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasCountry -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>It means that it has a country property.</rdfs:comment>
+        <rdfs:label>hasCountry</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasModelName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasModelName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>It means that it has a model name property.</rdfs:comment>
+        <rdfs:label>hasModelName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Airline"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>It means that it has an airlane name property.</rdfs:comment>
+        <rdfs:label>hasAirlineName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>It means that it has a review description property.</rdfs:comment>
+        <rdfs:label>reviewDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Rating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>It means that it has a value property.</rdfs:comment>
+        <rdfs:label>hasValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_date_published -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_date_published">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>It means that it has a date published property.</rdfs:comment>
+        <rdfs:label>hasDatePublished</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Aircraft -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Flight_Information"/>
+        <rdfs:comment>Vehicle that transport people or wares through the air.</rdfs:comment>
+        <rdfs:label>Aircraft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Airline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Airline">
+        <rdfs:comment>Company that uses its planes to transport people and goods.</rdfs:comment>
+        <rdfs:label>Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Business -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger_Type"/>
+        <rdfs:comment>Passenger leave is for a work reason.</rdfs:comment>
+        <rdfs:label>Business</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Business_Class -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Business_Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Seat_Type"/>
+        <rdfs:comment>Second most expensive option,with plenty amount of improvements.</rdfs:comment>
+        <rdfs:label>Business_Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Couple_Leisure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Couple_Leisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger_Type"/>
+        <rdfs:comment>Passenger is travelling with his couple for recreational reasons.</rdfs:comment>
+        <rdfs:label>Couple_Leisure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Destination -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Destination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Flight_Information"/>
+        <rdfs:comment>Airport or city of the flight destination.</rdfs:comment>
+        <rdfs:label>Destination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Economy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Seat_Type"/>
+        <rdfs:comment>Cheapest option with nothing included onboard.</rdfs:comment>
+        <rdfs:label>Economy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Family_Leisure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Family_Leisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger_Type"/>
+        <rdfs:comment>Passenger is travelling with his family for recreational reasons.</rdfs:comment>
+        <rdfs:label>Family_Leisure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/First_Class -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/First_Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Seat_Type"/>
+        <rdfs:comment>Most expensive option, with everything included.</rdfs:comment>
+        <rdfs:label>First_Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Flight_Information -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Flight_Information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review_Info"/>
+        <rdfs:comment>Information regarding the flight.</rdfs:comment>
+        <rdfs:label>Flight_Information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Negative -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Negative">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Not_Recommended"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Rating"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Normal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Positive"/>
+        <rdfs:comment>Represents the values from 1 to 4.</rdfs:comment>
+        <rdfs:label>Negative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Normal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Normal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Rating"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Positive"/>
+        <rdfs:comment>Represent the mid value 5.</rdfs:comment>
+        <rdfs:label>Normal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Not_Recommended -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Not_Recommended">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Recommended"/>
+        <rdfs:comment>The review is not recommended.</rdfs:comment>
+        <rdfs:label>Not_Recommended</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Origin -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Origin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Flight_Information"/>
+        <rdfs:comment>Airport or city of the flight origin.</rdfs:comment>
+        <rdfs:label>Origin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review_Info"/>
+        <rdfs:comment>Person who is being transported in a vehicle, in this case a plane.</rdfs:comment>
+        <rdfs:label>Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger_Type -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger"/>
+        <rdfs:comment>Type of passenger depending on the reason of the leave.</rdfs:comment>
+        <rdfs:label>Passenger_Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Positive -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Positive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Rating"/>
+        <rdfs:comment>Represent the values from 6 to 10.</rdfs:comment>
+        <rdfs:label>Positive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Premium_Economy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Premium_Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Seat_Type"/>
+        <rdfs:comment>Improvement from economy class, with some stuff included.</rdfs:comment>
+        <rdfs:label>Premium_Economy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Rating -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Rating">
+        <rdfs:comment>Represent a numerical value about customer expierence between 1 and 10, where 1 is the lowest and 10 the greatest.</rdfs:comment>
+        <rdfs:label>Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Recommended -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Recommended">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"/>
+        <rdfs:comment>Represents wether a review is recommended or not.</rdfs:comment>
+        <rdfs:label>Recommended</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review_Info"/>
+        <rdfs:comment>Evaluation of the expierence about the flight from the passenger expierence.</rdfs:comment>
+        <rdfs:label>Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review_Info -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review_Info">
+        <rdfs:comment>Information pertinent about the review</rdfs:comment>
+        <rdfs:label>Review_Information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Seat_Type -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Seat_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger"/>
+        <rdfs:comment>Type of the seat depending on the price spend.</rdfs:comment>
+        <rdfs:label>Seat_Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Solo_Leisure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Solo_Leisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger_Type"/>
+        <rdfs:comment>Passenger is travelling alone for recreational reasons.</rdfs:comment>
+        <rdfs:label>Solo_Leisure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7#“marred_by_inconveniences” -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7#“marred_by_inconveniences”">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"/>
+        <untitled-ontology-7:has_airline rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Qatar_Airways"/>
+        <untitled-ontology-7:has_passenger rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/MaryLe"/>
+        <untitled-ontology-7:has_rating rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Nine"/>
+        <untitled-ontology-7:hasTitle>The delay of my flight from Haneda to Doha caused a bit of chaos upon arrival. Despite my efforts to reach the gate promptly, I was denied boarding due to luggage issues, and the lack of assistance added to the frustration. I paid for an Economy Comfort package, which was supposed to include an aisle seat. However, upon boarding, I was informed that no aisle seats were available, despite assurances beforehand. Additionally, my luggage tag was lost during the boarding pass exchange, leading to further uncertainty upon arrival in London. What was meant to be a 19-hour journey turned into a 27-hour ordeal. When I requested assistance from staff regarding a re-arrangement they promised to get back to me within 5-10 minutes, but no one followed up until I reached out again. The security queue at Heathrow on departure from the UK was incredibly long, with a wait time of about 1.5 hours just to get through. Overall, while the crew onboard was courteous and provided great service, the experience was marred by these inconveniences.</untitled-ontology-7:hasTitle>
+        <untitled-ontology-7:has_date_published>2024-03-02</untitled-ontology-7:has_date_published>
+        <rdfs:comment>Title of the rating.</rdfs:comment>
+        <rdfs:label>“marred_by_inconveniences”</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/A380 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/A380">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Aircraft"/>
+        <untitled-ontology-7:has_airline rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Qatar_Airways"/>
+        <untitled-ontology-7:hasModelName>A380</untitled-ontology-7:hasModelName>
+        <rdfs:comment>Representas the model A380.</rdfs:comment>
+        <rdfs:label>A380</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/MaryLe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/MaryLe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger"/>
+        <untitled-ontology-7:has_rating rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Nine"/>
+        <untitled-ontology-7:hasCountry>UnitedKingdom</untitled-ontology-7:hasCountry>
+        <rdfs:comment>Name of the instance.</rdfs:comment>
+        <rdfs:label>MaryLe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Nine -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Nine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Rating"/>
+        <untitled-ontology-7:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-7:hasValue>
+        <rdfs:comment>Represents a rating.</rdfs:comment>
+        <rdfs:label>r1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Qatar_Airways -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Qatar_Airways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Airline"/>
+        <untitled-ontology-7:hasName>Qatar_Airways</untitled-ontology-7:hasName>
+        <rdfs:comment>Abreviation of Qatar Airways.</rdfs:comment>
+        <rdfs:label>QA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Ryanair -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Ryanair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Airline"/>
+        <untitled-ontology-7:hasName>Ryanair</untitled-ontology-7:hasName>
+        <rdfs:comment>Abreviation of Ryanair.</rdfs:comment>
+        <rdfs:label>RA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Wayne_Burgess -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Wayne_Burgess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger"/>
+        <untitled-ontology-7:has_rating rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Nine"/>
+        <untitled-ontology-7:hasCountry>Australia</untitled-ontology-7:hasCountry>
+        <rdfs:comment>Name of the instance.</rdfs:comment>
+        <rdfs:label>WayneBurgess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#val">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>When the review has a Rating of 5, it represents the &quot;Normal&quot; Rating.</rdfs:comment>
+        <rdfs:label>R1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_rating"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasValue"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#val"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#val"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Normal"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>When the review has a Rating superior of 5, it represents the &quot;Positive&quot; Rating.</rdfs:comment>
+        <rdfs:label>R2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_rating"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasValue"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#val"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#val"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Positive"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>When the review has a Rating inferior of 5, it represents the &quot;Negative&quot; Rating.</rdfs:comment>
+        <rdfs:label>R3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_rating"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasValue"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#val"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#val"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Negative"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
