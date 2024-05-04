@@ -1,0 +1,26 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Business" "base:Premium_Economy" "base:Passenger" "base:Solo_Leisure" "base:Rating" "base:Economy" "base:Destination" "base:Origin" "base:Recommended" "base:Couple_Leisure" "base:Seat_Type" "base:Review_Info" "base:Business_Class" "base:Review" "base:Family_Leisure" "base:Aircraft" "base:Flight_Information" "base:First_Class" "base:Normal" "base:Not_Recommended" "base:Negative" "base:Passenger_Type" "base:Positive" ; /*classes style*/
+	"base:Destination" -> "base:Flight_Information" [ label = "rdfs:subClassOf" ];
+	"base:Premium_Economy" -> "base:Seat_Type" [ label = "rdfs:subClassOf" ];
+	"base:Business" -> "base:Passenger_Type" [ label = "rdfs:subClassOf" ];
+	"base:Recommended" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:Business_Class" -> "base:Seat_Type" [ label = "rdfs:subClassOf" ];
+	"base:Seat_Type" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:Couple_Leisure" -> "base:Passenger_Type" [ label = "rdfs:subClassOf" ];
+	"base:Negative" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Economy" -> "base:Seat_Type" [ label = "rdfs:subClassOf" ];
+	"base:Aircraft" -> "base:Flight_Information" [ label = "rdfs:subClassOf" ];
+	"base:Solo_Leisure" -> "base:Passenger_Type" [ label = "rdfs:subClassOf" ];
+	"base:Passenger_Type" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:Passenger" -> "base:Review_Info" [ label = "rdfs:subClassOf" ];
+	"base:Flight_Information" -> "base:Review_Info" [ label = "rdfs:subClassOf" ];
+	"base:Origin" -> "base:Flight_Information" [ label = "rdfs:subClassOf" ];
+	"base:Normal" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Not_Recommended" -> "base:Recommended" [ label = "rdfs:subClassOf" ];
+	"base:Positive" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:First_Class" -> "base:Seat_Type" [ label = "rdfs:subClassOf" ];
+	"base:Family_Leisure" -> "base:Passenger_Type" [ label = "rdfs:subClassOf" ];
+
+}
