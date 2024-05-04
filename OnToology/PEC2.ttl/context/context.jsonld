@@ -1,0 +1,149 @@
+{
+  "@context" : {
+    "hasTitle" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Economy" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Economy"
+    },
+    "Passenger_Type" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger_Type"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review"
+    },
+    "First_Class" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/First_Class"
+    },
+    "has_passenger" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_passenger",
+      "@type" : "@id"
+    },
+    "Couple_Leisure" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Couple_Leisure"
+    },
+    "Recommended" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Recommended"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "hasName" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasModelName" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasModelName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasValue" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Business_Class" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Business_Class"
+    },
+    "Destination" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Destination"
+    },
+    "Solo_Leisure" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Solo_Leisure"
+    },
+    "Seat_Type" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Seat_Type"
+    },
+    "Origin" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Origin"
+    },
+    "Positive" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Positive"
+    },
+    "Business" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Business"
+    },
+    "Review_Info" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Review_Info"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Negative" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Negative"
+    },
+    "has_flight_information" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_flight_information",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "has_origin" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_origin",
+      "@type" : "@id"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Passenger"
+    },
+    "has_rating" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_rating",
+      "@type" : "@id"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Rating"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Aircraft"
+    },
+    "has_airline" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_airline",
+      "@type" : "@id"
+    },
+    "Flight_Information" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Flight_Information"
+    },
+    "has_date_published" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_date_published",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Airline"
+    },
+    "Premium_Economy" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Premium_Economy"
+    },
+    "Normal" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Normal"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "Family_Leisure" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Family_Leisure"
+    },
+    "Not_Recommended" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/Not_Recommended"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "has_destination" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/has_destination",
+      "@type" : "@id"
+    },
+    "hasCountry" : {
+      "@id" : "http://www.semanticweb.org/rudy/ontologies/2024/3/untitled-ontology-7/hasCountry",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
